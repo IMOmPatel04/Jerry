@@ -1,0 +1,18 @@
+# Jerry AI Assistant - Dependencies
+
+# LLM Backend
+ollama>=0.4.0
+
+# Terminal UI
+rich>=13.0.0
+
+# System Monitoring
+psutil>=5.9.0
+
+# Configuration
+pyyaml>=6.0
+
+# Voice (Future - for pocket device)
+# edge-tts>=6.1.0
+# openai-whisper>=20231117
+# sounddevice>=0.4.6

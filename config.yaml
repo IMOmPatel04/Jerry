@@ -1,0 +1,54 @@
+# ============================================
+# Jerry AI Assistant - Configuration
+# ============================================
+
+# Your profile
+user:
+  name: "Boss"  # What Jerry calls you
+  # Add any preferences Jerry should remember
+
+# LLM Settings
+llm:
+  provider: "ollama"        # "ollama" or "openai"
+  model: "llama3.2"         # Model name
+  temperature: 0.8          # Creativity (0.0 = focused, 1.0 = creative)
+  max_tokens: 2048          # Max response length
+
+  # OpenAI settings (uncomment if using OpenAI)
+  # openai_api_key: "sk-your-key-here"
+  # openai_model: "gpt-4o"
+
+  # Ollama settings
+  ollama_host: "http://localhost:11434"
+
+# Voice Settings (Future - for pocket device)
+voice:
+  enabled: false
+  tts_engine: "edge-tts"    # "edge-tts" or "pyttsx3"
+  voice_name: "en-US-GuyNeural"
+  speed: 1.0
+
+# Web Search Settings
+web_search:
+  enabled: true
+  max_results: 5
+
+# Safety Settings
+safety:
+  confirm_dangerous_commands: true     # Ask before shutdown, delete, etc.
+  confirm_file_deletion: true          # Ask before deleting files
+  sandbox_directory: "testFile"        # Jerry can only create/edit/delete files here
+  blocked_commands:                    # Commands Jerry should never run
+    - "format"
+    - "rm -rf /"
+
+# UI Settings
+ui:
+  show_tool_outputs: false        # Set to true to see raw data from tools (debug)
+  show_system_messages: true      # Show "Using tool..." messages
+
+# Memory Settings
+memory:
+  database_path: "jerry_memory.db"
+  short_term_limit: 5                 # Messages to keep in context (lower = faster)
+  enable_long_term: true              # Store conversation summaries

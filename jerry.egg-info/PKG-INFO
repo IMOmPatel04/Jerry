@@ -1,0 +1,12 @@
+Metadata-Version: 2.4
+Name: jerry
+Version: 0.1.0
+Summary: A personal AI assistant inspired by Jarvis
+Requires-Python: >=3.10
+Requires-Dist: pydantic
+Requires-Dist: httpx
+Requires-Dist: rich
+Requires-Dist: pyyaml
+Requires-Dist: psutil
+Requires-Dist: ollama
+Requires-Dist: duckduckgo-search>=5.0

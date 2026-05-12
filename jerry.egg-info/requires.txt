@@ -1,0 +1,7 @@
+pydantic
+httpx
+rich
+pyyaml
+psutil
+ollama
+duckduckgo-search>=5.0

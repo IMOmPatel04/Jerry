@@ -1,0 +1,21 @@
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "jerry"
+version = "0.1.0"
+description = "A personal AI assistant inspired by Jarvis"
+requires-python = ">=3.10"
+dependencies = [
+    "pydantic",
+    "httpx",
+    "rich",
+    "pyyaml",
+    "psutil",
+    "ollama",
+    "duckduckgo-search>=5.0"
+]
+
+[project.scripts]
+jerry = "jerry.main:main"
